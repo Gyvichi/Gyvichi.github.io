@@ -3,26 +3,13 @@ title: "Understanding Lambda Optimization with Aliens"
 date: 2023-04-19 08:26:28 -0400
 categories: jekyll update
 ---
-2109 안성준
-## 0. 주제 관련 단원
-https://www.yohandi.me/blog/lagrange-relaxation/
-https://mamnoonsiam.github.io/posts/attack-on-aliens.html
-볼록성 증명이 MCMF와 관련있다는 말이..
-## 1. 주제 선정 이유
-라그랑주 승수법의 아이디어를 빌린 Lambda optimizaiton(Alien Trick, WQS Binary Search, Lagrangian Relaxation 등 정식 명칭이 없어 다양한 별칭 존재)은 점화식 연산을 가속하는 기법 중 하나이다. 이 아이디어는 2016 IOI Aliens 문제에 처음으로 등장하여 화제가 되었는데, 람다 최적화는 Aliens trick이라고 알려지며 그 근원에 속하는 라그랑주 승수법과의 관계가 알려지지 않았다. 
-![](https://i.imgur.com/fcFO10a.png)
-*IOI 당시 Aliens 문제(A) 만점자는 1명이었다.*
-![](https://i.imgur.com/jsolOTa.png)
 
-그래서 현재 잘 알려진 풀이(사실상 모든 풀이)에 들어가는 제약 조건 최적화를 위한 이분탐색 과정은 수학적으로 필요 없음을 증명할 수 있는데도 모범 답안에 들어가 있는 등의 문제가 있다.
-![](https://i.imgur.com/v34PGbI.png)
-*인터넷에 남아있는 람다 최적화의 실제 아이디어에 대해 소개한 유일한 댓글. 이 이외의 모든 설명 웹사이트나 IOI 해설 사이트에도 사용법만 알려져 있고 그 원리를 직관에 맡긴다.*
+Lambda Optimization(Alien Trick, WQS Binary Search, Lagrangian Relaxation)은 Penalty Method를 활용하는 컨벡스 최적화와 관계 깊다. 아쉽게도 Lambda Optimization에 대해 정성적인 설명이 많고 Lagrangian Multiplier와의 관계가 덜 서술되어 있어 정리한다.
 
-한편 람다 최적화는 선형 계획법에 일반적인 라그랑주 승수법과 라그랑주 쌍대를 적용하는 창의적인 접근이다.
+이 기법은 IOI 16' Aliens에서 먼저 제시되었는데, 당시 만점자가 1명이었다. 그 분은 중국 커뮤니티 CP에서 배웠다고 한다. 하지만 람다 최적화는 그 내용이 꽤 간단해서, 충분한 인터넷 서치와 함께라면 이해할 수 있다.
 
-그래서 람다 최적화가 정확히 무엇이고 어떤 아이디어인지 정립하고, 인터넷으로만 전해지며 생긴 오개념들을 바로잡고자 한다.
-## 2. 이론적 배경
-#### 2.1. 라그랑주 승수법(Lagrange Multiplier)
+## 1. 이론적 배경
+#### 1.1. 라그랑주 승수법(Lagrange Multiplier)
 라그랑주 승수법은 제약이 있는 함수의 최적화 알고리즘이다. 라그랑주 승수법의 메인 아이디어는 **두 함수가 접할 때 접선을 공유하여 gradient가 평행**하다는 것이다.
 따라서 최적화하고자 하는 함수 $f$와 제약 $g$에 대해 $\nabla f = \lambda \nabla g$라 표현할 수 있다. (이때 $\lambda$를 Lagrange Multiplier라 부른다.)
 
@@ -45,7 +32,7 @@ $$
 >$\therefore$ 제약 $g$가 걸린 함수 $f$의 최적화는 아래 수식을 통해 가능하다.
 >$\nabla \mathcal{L} = \nabla f - \nabla \lambda (c-g) = 0$
 
-#### 2.2. IOI 16' D2 Q6 Aliens
+#### 1.2. IOI 16' D2 Q6 Aliens
 ![](https://i.imgur.com/zAOa4ep.png)
 문제는 아래와 같다.
 >$m \times m$의 정사각형 행렬 위 $n$개의 중복 가능 점들이 $r[i],~c[i]$로 주어진다. $k$개의 **대각선이 주대각선과 일치하는 정사각형**을 그려 모든 점들을 포함시킬 때, 그린 정사각형들의 합집합이 차지하는 영역을 최소화하고자 한다. 이때 그 영역을 출력하시오. ($1 \times 1$의 넓이를 1로 두자.)
@@ -57,7 +44,7 @@ $$
 
 이 문제의 중요한 점은 바로 주어지는 입력의 크기가 너무 커 시간 제한 내에 푸는 알고리즘을 작성하려면 많은 최적화가 필요하다는 것이다.
 
-#### 2.3. 용어
+#### 1.3. 용어
 - Penalty Method
 	- 위 Lagrange Multiplier처럼 제약 문제를 제약되지 않은 문제로 풀어내는 기법을 모아 Penalty method라 한다. 제약되지 않은 함수로 풀어졌을 때 그 함수를 Penalty function이라 하는데, 이를 구성하는 parameter를 Penalty parameter라 한다.
 - Epigraph $epi~f$
@@ -122,6 +109,9 @@ $$f(i)=min_{t<i}~\{g(t)\}+(r_i-l_{i+1}+1)^2-max(r_t-l_{t+1}+1, 0)+\lambda$$
 #### 5. Ref
 - https://www.youtube.com/watch?v=WZKOdorb1Dg
 - https://convex-optimization-for-all.github.io/
+- https://www.yohandi.me/blog/lagrange-relaxation/
+https://mamnoonsiam.github.io/posts/attack-on-aliens.html
+
 ### 2.1. Monge Array
 $1\leq a < b \leq n,~1 \leq c < d \leq m$인 $a, b, c, d$에 대해 아래를 만족하면 $n \times m$ 행렬 $A$는 monge array이다.
 $A[a, c]+A[b, d] \leq A[a, d]+A[b, c]$
