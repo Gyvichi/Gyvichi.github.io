@@ -1,5 +1,5 @@
 ---
-title: "Understanding $\lambda$ Optimization with Aliens"
+title: "Understanding Lambda Optimization with Aliens"
 date: 2023-04-19 08:26:28 -0400
 categories: jekyll update
 ---
