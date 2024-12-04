@@ -1,7 +1,7 @@
 ---
 title: "Understanding Lambda Optimization with Aliens"
 date: 2023-04-19 08:26:28 -0400
-categories: jekyll update
+categories: record PS
 ---
 
 Lambda Optimization(Alien Trick, WQS Binary Search, Lagrangian Relaxation)은 Penalty Method를 활용하는 컨벡스 최적화와 관계 깊다. 아쉽게도 Lambda Optimization에 대해 정성적인 설명이 많고 Lagrangian Multiplier와의 관계가 덜 서술되어 있어 정리한다.
