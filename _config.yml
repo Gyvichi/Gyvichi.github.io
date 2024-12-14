@@ -17,18 +17,18 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Blog"
+title                    : "Seongjun's Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Seongjun Ahn"
-description              : "학교 생활 기록"
+description              : "인상 깊게 배운 내용들을 기록합니다"
 url                      : "https://Gyvichi.github.io" 
 baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 220
 enable_copy_code_button  : # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
@@ -113,7 +113,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "玄田牛一"
+  name             : "안성준"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "CBSH 35"
   location         : "South Korea"
