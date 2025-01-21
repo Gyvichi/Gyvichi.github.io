@@ -22,21 +22,21 @@ repository               : "Gyvichi/Gyvichi.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Seongjun Ahn"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "안성준이 거주하는 블로그"
+  location         : ""
+  employer         : ""
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : ""
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : ""
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : ""
   researchgate     : # URL
   scopus           : # URL
 
@@ -85,7 +85,7 @@ publication_category:
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
