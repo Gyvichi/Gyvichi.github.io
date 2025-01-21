@@ -8,4 +8,4 @@ date: 2023-05-28
 location: "Princeton, New Jersey"
 ---
 
-This is a description of your talk, which is a markdown file that can be all markdown-ified like any other post. Yay markdown!
+미국 수학여행에서 들은 강의들 중 유익했던 강의들만 골라서 업로드 준비하고 있다.
