@@ -16,3 +16,13 @@ I have an inquiry regarding rating systems. I've hypothesized that ratings shoul
 Furthermore, how can I generalize this concept? What terms can be associated with the functions rating() and eval()? I am guessing the concept of a value function in DRL or a Q-table.
 
 ![](https://i.imgur.com/V5ChrMs.png)
+
+## Books
+I read and refered to these:
+
+- The Jet Paradigm, Tomaso Belloni
+- Fundamental Astronomy, Karttunen
+- A Friendly Introduction to Number Theory, Silverman
+- Analysis I & II, Tao
+- Signals and Systems, Oppenheim
+- Brief Answers to the Big Questions, Hawking
