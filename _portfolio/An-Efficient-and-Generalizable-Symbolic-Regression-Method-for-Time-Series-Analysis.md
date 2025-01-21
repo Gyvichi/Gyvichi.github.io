@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "An Efficient and Generalizable Symbolic Regression Method for Time Series Analysis"
+excerpt: "NEMoTS does symbolic regression by MCTS with PUCT"
 collection: portfolio
 ---
 
