@@ -1,7 +1,7 @@
 ---
 title: "Semiconductors"
 collection: talks
-type: "Talks"
+type: "Talk"
 permalink: /talks/2023/Semiconductors
 venue: "MIT"
 date: 2023-05-29
