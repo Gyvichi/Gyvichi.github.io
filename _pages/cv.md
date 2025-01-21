@@ -11,7 +11,6 @@ redirect_from:
 
 Education
 ======
-* Chungbuk Science High School, 2025
 
 Publications
 ======
