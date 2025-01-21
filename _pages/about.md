@@ -20,9 +20,9 @@ Furthermore, how can I generalize this concept? What terms can be associated wit
 ## Books
 I read and refered to these:
 
-- The Jet Paradigm, Tomaso Belloni
-- Fundamental Astronomy, Karttunen
 - A Friendly Introduction to Number Theory, Silverman
 - Analysis I & II, Tao
 - Signals and Systems, Oppenheim
 - Brief Answers to the Big Questions, Hawking
+- Introduction to Electrodynamics, Griffiths
+- Fundamental Astronomy, Karttunen
