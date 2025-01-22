@@ -24,4 +24,5 @@ Furthermore, how can I generalize this concept? What terms can be associated wit
 - Brief Answers to the Big Questions, Hawking
 - Introduction to Electrodynamics, Griffiths
 - Fundamental Astronomy, Karttunen
+- Introductory Astronomy & Astrophysics, Zeilik
 
