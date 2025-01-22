@@ -1,7 +1,7 @@
 ---
-title: 'KPLO Lecture'
-date: 2024-12-11
-permalink: /posts/2024/KPLO-Lecture/
+title: 'Discrete Dynamical Systems and Applications'
+date: 2024-08-19
+permalink: /posts/2024/DDS/
 tags:
   - Misc
 ---
