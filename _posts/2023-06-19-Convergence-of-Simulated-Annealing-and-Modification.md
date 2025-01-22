@@ -1,7 +1,7 @@
 ---
-title: 'Convergence of Simulated Annealing'
+title: 'Convergence of Simulated Annealing and Modification'
 date: 2023-06-19
-permalink: /posts/2023/06/Convergence-of-Simulated-Annealing/
+permalink: /posts/2023/SA/
 tags:
   - CS
   - Mathematics
