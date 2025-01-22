@@ -25,5 +25,3 @@ Furthermore, how can I generalize this concept? What terms can be associated wit
 - Introduction to Electrodynamics, Griffiths
 - Fundamental Astronomy, Karttunen
 - Introductory Astronomy & Astrophysics, Zeilik
-
-Additional posts about codes and projects are open at my github repository.
