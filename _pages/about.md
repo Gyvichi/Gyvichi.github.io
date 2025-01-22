@@ -18,11 +18,14 @@ Furthermore, how can I generalize this concept? What terms can be associated wit
 ![](https://i.imgur.com/V5ChrMs.png)
 
 ## Books
-I read and refered to these:
-
 - A Friendly Introduction to Number Theory, Silverman
 - Analysis I & II, Tao
 - Signals and Systems, Oppenheim
 - Brief Answers to the Big Questions, Hawking
 - Introduction to Electrodynamics, Griffiths
 - Fundamental Astronomy, Karttunen
+
+
+![image](https://github.com/user-attachments/assets/f3cc011f-7b98-46cd-b039-43ad82518e4b)
+
+Now Shake it!
