@@ -25,7 +25,3 @@ Furthermore, how can I generalize this concept? What terms can be associated wit
 - Introduction to Electrodynamics, Griffiths
 - Fundamental Astronomy, Karttunen
 
-
-![image](https://github.com/user-attachments/assets/f3cc011f-7b98-46cd-b039-43ad82518e4b)
-
-Now Shake it!
