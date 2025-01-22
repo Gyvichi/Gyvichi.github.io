@@ -3,7 +3,7 @@ title: 'Resistor Network'
 date: 2024-11-30
 permalink: /posts/2024/Resistor-Network/
 tags:
-  - Phsyics
+  - Physics
   - Mathematics
 ---
 
