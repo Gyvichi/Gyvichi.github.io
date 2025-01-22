@@ -18,3 +18,6 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
+Activities
+======
+Regeneron ISEF '24 Finalist (Physics and Astronomy)
