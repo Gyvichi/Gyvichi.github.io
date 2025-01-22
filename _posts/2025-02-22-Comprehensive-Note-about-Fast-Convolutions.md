@@ -9,8 +9,15 @@ tags:
 
 Today I will summarize the entire FFT/CZT stuffs for PS and other fields in everything I know, I am sure there may be some interesting codes.
 
+## 4. Fast Multiplication
+
+>Karatsuba algorithm 
 
 
+
+https://blog.naver.com/PostView.naver?blogId=jinhan814&logNo=222681847134&categoryNo=6&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView
+
+이집트 곱셈법
 
 ## 10. Hell-Joseon Style NTT
 Hell-Joseon style NTT is an algorithm implemented by `DeobureoMinkyuParty` which went to 24th in ICPC WF '19. I may call HJNTT below, HJNTT utilizes AVX for acceleration.
