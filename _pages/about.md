@@ -24,6 +24,7 @@ Furthermore, how can I generalize this concept? What terms can be associated wit
 ## Books
 - A Friendly Introduction to Number Theory, Silverman
 - Analysis I & II, Tao
+- The Arithmetic of Elliptic Curves, Silverman
 - Signals and Systems, Oppenheim
 - Brief Answers to the Big Questions, Hawking
 - Introduction to Electrodynamics, Griffiths
