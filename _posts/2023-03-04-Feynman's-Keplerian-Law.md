@@ -1,5 +1,5 @@
 ---
-title: 'Feynman's Keplerian Law'
+title: 'Feynman Proof of Keplerian Motion'
 date: 2023-03-04
 permalink: /posts/2023/Feynman-Kepler
 tags:
