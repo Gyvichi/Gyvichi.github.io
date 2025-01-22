@@ -13,6 +13,8 @@ Hello and welcome to my simple website. This is for sharing various informations
 - Talks : Interesting lectures I took.
 - Papers : Short paper reviews.
 
+cf. In my github repository `cbsh_dm' there are various basic DL codes which were used in DeepMind, deep learning club in my high school.
+
 ## Discussion
 
 I have an inquiry regarding rating systems. I've hypothesized that ratings should be constructed from comprehensive evaluation functions in order to achieve accuracy in measurement. For instance, there is a significant disparity between winning through tactical play and winning via scholar's mate. Given `eval()`'s ability to accurately measure every process, would it be reasonable to derive certain metrics such as "rating" from eval? In the context of chess, factors such as time can be taken into consideration along with the construction of a rating from the eval. 
