@@ -32,3 +32,4 @@ Furthermore, how can I generalize this concept? What terms can be associated wit
 - Introduction to Electrodynamics, Griffiths
 - Fundamental Astronomy, Karttunen
 - Introductory Astronomy & Astrophysics, Zeilik
+- Hands-On GPU-Accelerated Computer Vision with OpenCV and CUDA, Vaidya
