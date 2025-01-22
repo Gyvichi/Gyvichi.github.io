@@ -3,7 +3,8 @@ title: 'Discrete Dynamical Systems and Applications'
 date: 2024-08-19
 permalink: /posts/2024/DDS/
 tags:
-  - Misc
+  - CS
+  - Mathematics
 ---
 
 This is a sample blog post. Lorem ipsum I can't remember the rest of lorem ipsum and don't have an internet connection right now. Testing testing testing this blog post. Blog posts are cool. 
