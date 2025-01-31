@@ -1,5 +1,5 @@
 ---
 title: "All About YOLOs"
-excerpt: "YOLOv1 to YOLOv11"
+excerpt: "Ultralytics, ~v11"
 collection: portfolio
 ---
