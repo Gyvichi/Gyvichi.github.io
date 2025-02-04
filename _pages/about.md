@@ -15,12 +15,7 @@ Hello and welcome to my simple website. This is for sharing various informations
 
 
 ## Books
-- A Friendly Introduction to Number Theory, Silverman
-- Analysis I & II, Tao
-- The Arithmetic of Elliptic Curves, Silverman
-- Signals and Systems, Oppenheim
-- Brief Answers to the Big Questions, Hawking
+
 - Introduction to Electrodynamics, Griffiths
 - Fundamental Astronomy, Karttunen
 - Introductory Astronomy & Astrophysics, Zeilik
-- Hands-On GPU-Accelerated Computer Vision with OpenCV and CUDA, Vaidya
