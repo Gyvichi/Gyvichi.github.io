@@ -13,7 +13,8 @@ Hello and welcome to my website. This is for sharing various informations and ha
 - Talks : Cool lectures I took.
 - Papers : Paper reviews.
 
-## Books
+#### Being Polymath
+
 - Spacetime and Geometry, Carroll
 - Fundamental Astronomy, Karttunen
 - Introductory Astronomy & Astrophysics, Zeilik
