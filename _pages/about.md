@@ -14,7 +14,6 @@ Hello and welcome to my website. This is for sharing various informations and ha
 - Papers : Paper reviews.
 
 ## Books
-
-- Introduction to Electrodynamics, Griffiths
+- Spacetime and Geometry, Carroll
 - Fundamental Astronomy, Karttunen
 - Introductory Astronomy & Astrophysics, Zeilik
