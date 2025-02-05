@@ -19,13 +19,10 @@ Hello and welcome to my website. This is for sharing various informations and ha
 - Spacetime and Geometry, Carroll
 - Fundamental Astronomy, Karttunen
 - Introductory Astronomy & Astrophysics, Zeilik
-- 
+  
 #### B.S.
 
 - Berlekamp-Massey and its generalization : https://koosaga.com/231
-- Quantitative Analysis
-  - CNNPred : CNN-based stock market prediction
 - Facism, Robert O. Paxton
 - Etica Protestante, Max Weber
-- Nietsche,
-- Hillary
+- Nietsche, Hillary
