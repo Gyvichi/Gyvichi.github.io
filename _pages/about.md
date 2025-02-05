@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello and welcome to my website. This is for sharing various informations and having discussions. I am not yet a specialist, so there may be errors in my writings. I welcome any corrections or constructive feedback. These days I am interested in deep learning and cryptography, but still trying to be polymath.
+Hello and welcome to my website. This is for sharing various informations and having discussions. I am not yet a specialist, so there may be errors in my writings. I welcome any corrections or constructive feedback. These days I am interested in TSF (Time Series Forecast) and adversarial attacks, but still trying to be polymath.
 
 - Blog posts : Interesting (+ esoteric) stuffs usually on math and CS.
 - Talks : Cool lectures I took.
