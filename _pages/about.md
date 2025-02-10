@@ -7,11 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello and welcome to my website. This is for sharing various informations and having discussions. I am not yet a specialist, so there may be errors in my writings. I welcome any corrections or constructive feedback. These days I am interested in TSF (Time Series Forecast) and adversarial attacks, but still trying to be polymath.
-
-- Blog posts : Interesting (+ esoteric) stuffs usually on math and CS.
-- Talks : Cool lectures I took.
-- Papers : Paper reviews.
+Hello and welcome to my website. I upload various interesting less known stuffs, but there may be some errors since I am not yet a specialist. I welcome any corrections or constructive feedback. These days I am interested in deep learning and ethical hacking.
 
 
 #### Being Polymath
@@ -22,7 +18,6 @@ Hello and welcome to my website. This is for sharing various informations and ha
   
 #### B.S.
 
-- Berlekamp-Massey and its generalization : https://koosaga.com/231
 - Facism, Robert O. Paxton
 - Etica Protestante, Max Weber
 - Nietsche, Hillary
