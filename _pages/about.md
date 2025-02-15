@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello and welcome to my website. I upload various interesting less known stuffs, but there may be some errors since I am not yet a specialist. I welcome any corrections or constructive feedback. These days I am interested in deep learning and ethical hacking.
+Hello and welcome to my website. I upload various interesting less known stuffs, but there may be some errors since I am not yet a specialist. I welcome any corrections or constructive feedback. These days I am interested in cybersecurity and offensive AIs.
 
 
 #### Being Polymath
