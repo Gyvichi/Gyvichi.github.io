@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello and welcome to my website. I upload various interesting less known stuffs, but there may be some errors since I am not yet a specialist. I welcome any corrections or constructive feedback. These days I am interested in cybersecurity and offensive AIs.
+Hello and welcome to my website. I upload various interesting less known stuffs, but there may be some errors since I am not yet a specialist. I welcome any corrections or constructive feedback. I am interested in surveillance/offensive AIs.
 
 
 #### Being Polymath
@@ -20,4 +20,4 @@ Hello and welcome to my website. I upload various interesting less known stuffs,
 
 - Facism, Robert O. Paxton
 - Etica Protestante, Max Weber
-- Nietsche, Hillary
+- Nietsche the Man and His Philosophy, J. Hollingdale
