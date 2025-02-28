@@ -1,7 +1,7 @@
 ---
 title: 'Discrete Dynamical Systems and Applications'
-date: 2024-08-19
-permalink: /posts/2024/DDS/
+date: 2023-08-19
+permalink: /posts/2023/DDS/
 tags:
   - CS
   - Mathematics
