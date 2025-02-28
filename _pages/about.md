@@ -7,16 +7,15 @@ redirect_from:
   - /about.html
 ---
 
-Hello and welcome to my website. I upload various interesting less known stuffs, but there may be some errors since I am not yet a specialist. I welcome any corrections or constructive feedback. I am interested in surveillance/offensive AIs.
+https://offensive-ai-lab.github.io/
 
+Tags : Computer Science, Deep Learning, Mathematics, Physics, and Misc
 
-#### Being Polymath
+#### Books
 
 - Spacetime and Geometry, Carroll
 - Fundamental Astronomy, Karttunen
 - Introductory Astronomy & Astrophysics, Zeilik
-  
-#### B.S.
 
 - Facism, Robert O. Paxton
 - Etica Protestante, Max Weber
