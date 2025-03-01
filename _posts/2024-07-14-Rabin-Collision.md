@@ -1,7 +1,7 @@
 ---
 title: 'Hash Collision of Rabin-Karp Fingerprint'
-date: 2023-08-19
-permalink: /posts/2023/DDS/
+date: 2024-07-14
+permalink: /posts/2024/Rabin/
 tags:
   - CS
   - Mathematics
