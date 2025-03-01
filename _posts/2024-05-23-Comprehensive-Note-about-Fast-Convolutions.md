@@ -1,7 +1,7 @@
 ---
 title: 'Comprehensive Note on Fast Convolutions'
-date: 2025-02-22
-permalink: /posts/2025/Conv/
+date: 2024-05-23
+permalink: /posts/2024/Conv/
 tags:
   - CS
   - Mathematics
