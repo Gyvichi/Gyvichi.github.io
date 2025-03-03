@@ -10,7 +10,7 @@ tags:
 
 Let's review softmax attention. 
 
-1. Parallel Training
+- Parallel Training
 
 $$
 \mathbf{O} = \text{softmax}(\mathbf{QK}^\top \odot \mathbf{M})\mathbf{V} \quad \in \mathbb{R}^{L \times d}
@@ -28,7 +28,7 @@ $$M_{i,j} =
 \end{cases}
 $$
 
-2. Iterative Inference
+- Iterative Inference
 
 $$\mathbf{o}_t = \sum_{j=1}^{t} \frac{\exp(\mathbf{q}_t^\top \mathbf{k}_j)}{\sum_{l=1}^{t} \exp(\mathbf{q}_t^\top \mathbf{k}_l)} \mathbf{v}_j \quad \in \mathbb{R}^{d}$$
 
@@ -45,11 +45,11 @@ Paper : **Transformers are RNNs : Fast Autoregressive Transformers with Linear A
 
 This paper first proposes the method to make transformers into recurrent form by removing softmax. We can say that kernel function is changed for some new approaches : **associativity**.
 
-1. Parallel training
+- Parallel training
 
 $$\mathbf{O} = (\mathbf{QK}^\top \circ \mathbf{M})\mathbf{V} \quad \in \mathbb{R}^{L \times d}$$
 
-2.  Iterative Inference
+- Iterative Inference
 
 $$\mathbf{o}_t = \sum_{j=1}^{t} \mathbf{q}_t^\top \mathbf{k}_j \mathbf{v}_j \quad \in \mathbb{R}^{d}$$
 where $\mathbf{M}$ is the causal mask for linear attention:
