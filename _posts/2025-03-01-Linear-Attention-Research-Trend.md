@@ -28,9 +28,10 @@ $$M_{i,j} =
 \end{cases}
 $$
 
-2. Iterative Inference $$
-\mathbf{o}_t = \sum_{j=1}^{t} \frac{\exp(\mathbf{q}_t^\top \mathbf{k}_j)}{\sum_{l=1}^{t} \exp(\mathbf{q}_t^\top \mathbf{k}_l)} \mathbf{v}_j \quad \in \mathbb{R}^{d}
-$$
+2. Iterative Inference
+
+$$\mathbf{o}_t = \sum_{j=1}^{t} \frac{\exp(\mathbf{q}_t^\top \mathbf{k}_j)}{\sum_{l=1}^{t} \exp(\mathbf{q}_t^\top \mathbf{k}_l)} \mathbf{v}_j \quad \in \mathbb{R}^{d}$$
+
 ![](https://i.imgur.com/DOt5a9c.png)
 
 While inference, you keep around KV-cache that takes $\mathcal{O}(L)$ memory since they are vectors. Now here's the point : 
@@ -47,7 +48,9 @@ This paper first proposes the method to make transformers into recurrent form by
 1. Parallel training
 
 $$\mathbf{O} = (\mathbf{QK}^\top \circ \mathbf{M})\mathbf{V} \quad \in \mathbb{R}^{L \times d}$$
+
 2.  Iterative Inference
+
 $$\mathbf{o}_t = \sum_{j=1}^{t} \mathbf{q}_t^\top \mathbf{k}_j \mathbf{v}_j \quad \in \mathbb{R}^{d}$$
 where $\mathbf{M}$ is the causal mask for linear attention:
 
@@ -85,7 +88,7 @@ This branch of approach is shared with RetNet, DeltaNet, etc. These papers usual
 
 # 2. Limitations of Katharopoulos et al.
 
-#### 2.1. Error on Value Retrieval
+## 2.1. Error on Value Retrieval
 Problem emerges when you try to retrieve $\mathbf{v}_t$ from $\mathbf{k}_t$. 
 
 $$\mathbf{Sk}_j = \sum \mathbf{v}_i(\mathbf{k}_i^\top \mathbf{k}_j) = \mathbf{v}_j+\sum_{i \neq j}(\mathbf{k}_i^\top \mathbf{k}_j)\mathbf{v}_i=\mathbf{v}_j
@@ -97,7 +100,7 @@ $$
 
 This is the main motivation of gating mechanism in linear attention architectures : GLA (Gated Linear Attention), Mamba, etc. However, these models still doesn't show satisfying performance. (Overally DeltaNet 2 seems as the best choice now.)
 
-#### 2.2. Training Mode Left & Materialization of each time step's matrix-valued hidden states is  expensive
+## 2.2. Training Mode Left & Materialization of each time step's matrix-valued hidden states is  expensive
 
 One of the solution is **Chunkwise parallel form** (Hua et al, '22, Sun et al, '23) which makes a *chunk*- splits a sequence length $L$ into $L/C$ chunks of size $C$. if $C=1$ reduces to recurrent, if $C=L$ reduces to the parallel form. We can say its an interpolation between recurrent and parallel one, and it is NOT AN APPROXIMATION. You get this satisfactory complexity eventually : 
 
@@ -150,7 +153,7 @@ This operation allows both **recurrent** and **parallel**, breaking away softmax
 
 # 5. DeltaNet
 
-#### 5.1. Data-dependent decaying
+## 5.1. Data-dependent decaying
 
 While RetNet utilized data-independent decaying, DeltaNet applies data-dependent decaying to control memory retention/forgetting. 
 
@@ -196,7 +199,7 @@ $$
 
 where \(\mathbf{v}_t^{\text{new}}\) is a learned combination of the old and current values, controlled by a dynamic \(\beta_t \in (0, 1)\): when \(\beta_t = 0\), the memory content remains intact, and when \(\beta_t = 1\), we completely replace the old associated value with the new one.
 
-#### 5.3. Beyond $TC^0$
+## 5.3. Beyond $TC^0$
 
 ![](https://i.imgur.com/GBcTwVy.png)
 
@@ -224,7 +227,7 @@ $$\prod_{j=i+1}^t (1 - \beta_j k_j k_j^T) = 1 - \sum_{i=1}^t w_i k_i^\top$$
 
 RWKVv4 (Dove, 2023) to RWKVv6 (Finch and Eagle). RWKVv7 is being trained now.
 
-##### 6.1. AFT(Attention Free Transformer, 2021)
+## 6.1. AFT(Attention Free Transformer, 2021)
 RWKV's inspiration is clear : AFT. AFT changes QKV attention as below :
 
 $$Attn(Q, K, V)=\sigma\left(\frac{Q_i (K_i)^T}{\sqrt{d_k}}\right) V_i ~ \rightarrow~
@@ -238,7 +241,7 @@ $$
 
 Query passes sigmoid to control, and $softmax(K)$ gets **learned pair-wise positive bias** matrix $w$ for positional encoding and dynamic approximation.
 
-#### 6.2. Idea of RWKV
+## 6.2. Idea of RWKV
 
 RWKV is consisted of time-mixing and channel-mixing which corresponds to self-attention and FFN. It works with a **receptence** vector which helps to consider 일부 token.
 
