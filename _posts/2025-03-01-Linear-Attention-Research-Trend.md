@@ -94,7 +94,7 @@ Problem emerges when you try to retrieve $\mathbf{v}_t$ from $\mathbf{k}_t$.
 $$\mathbf{Sk}_j = \sum \mathbf{v}_i(\mathbf{k}_i^\top \mathbf{k}_j) = \mathbf{v}_j+\sum_{i \neq j}(\mathbf{k}_i^\top \mathbf{k}_j)\mathbf{v}_i=\mathbf{v}_j
 $$
 
-**We need $\mathbf{k}_i^\top \mathbf{k}_j$, i.e. all keys should be orthogonal**. This explains why increasing head dimension helps : we should provide higher dimension in the vector space to store distinct KV pairs. (RetNet paper demonstrated.) Since we **cannot remove KVs but add them**, longer sequence leads to retrieval errors. Researcher Songlin Yang says this is the main reason that vanilla linear attention underperforms compared to softmax attention. She says : 
+**We need $\mathbf{k}_i^\top \mathbf{k}_j=0$, i.e. all keys should be orthogonal**. This explains why increasing head dimension helps : we should provide higher dimension in the vector space to store distinct KV pairs. (RetNet paper demonstrated.) Since we **cannot remove KVs but add them**, longer sequence leads to retrieval errors. Researcher Songlin Yang says this is the main reason that vanilla linear attention underperforms compared to softmax attention. She says : 
 
 >The enemy of memory is not time; it's other memory.
 
@@ -102,7 +102,7 @@ This is the main motivation of gating mechanism in linear attention architecture
 
 ## 2.2. Training Mode Left & Materialization of each time step's matrix-valued hidden states is  expensive
 
-One of the solution is **Chunkwise parallel form** (Hua et al, '22, Sun et al, '23) which makes a *chunk*- splits a sequence length $L$ into $L/C$ chunks of size $C$. if $C=1$ reduces to recurrent, if $C=L$ reduces to the parallel form. We can say its an interpolation between recurrent and parallel one, and it is NOT AN APPROXIMATION. You get this satisfactory complexity eventually : 
+One of the solution is **chunkwise parallel form** (Hua et al, '22, Sun et al, '23) which makes a *chunk*- splits a sequence length $L$ into $L/C$ chunks of size $C$. if $C=1$ reduces to recurrent, if $C=L$ reduces to the parallel form. We can say its an interpolation between recurrent and parallel one, and it is NOT AN APPROXIMATION. You get this satisfactory complexity eventually : 
 
 ![](https://i.imgur.com/5emX7JI.png)
 
