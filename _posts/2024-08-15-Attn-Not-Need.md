@@ -33,14 +33,14 @@ A _path_ simply records which sequence of heads a given input follows, represent
 
 Now, we introduce a metric called _residual_, which quantifies how close a matrix is to being rank 1.
 
-$$res(X)=X-\mathbf{1}x^T,~x = argmin_x ||X-\mathbf{1}x^T||_{\infty}$$
+$$res(X)=X-\mathbf{1}x^T,~x = argmin_x \vert\vert X-\mathbf{1}x^T \vert\vert_{\infty}$$
 
-Minimizing $||X - \mathbf{1}x||_{\infty}$ norm corresponds to minimizing the absolute error between $X_{ij}$ and $\mathbf{1}x$. In this sense, $x$ represents the most significant low-rank approximation of $X$, meaning that rank collapse occurs when the residual error $res(X)$ is small.
+Minimizing $\vert\vert X - \mathbf{1}x \vert\vert_{\infty}$ norm corresponds to minimizing the absolute error between $X_{ij}$ and $\mathbf{1}x$. In this sense, $x$ represents the most significant low-rank approximation of $X$, meaning that rank collapse occurs when the residual error $res(X)$ is small.
 
 The key inequality proposed in the paper is as follows, where $\beta$ denotes an upper bound on the weights:  
-($||W_{QK}||_1 ||W_V||_{\infty} \leq \beta$)
+($\vert\vert W_{QK} \vert\vert_1 \vert\vert W_V \vert\vert_{\infty} \leq \beta$)
 
-$$||res(Y(X))||_{1, \infty} \leq (\frac{4 \beta H}{\sqrt{d_{qk}}})^{\frac{3^L-1}{2}}||res(X)||_{1, \infty}^{3^L}$$
+$$\vert\vert res(Y(X))\vert\vert_{1, \infty} \leq (\frac{4 \beta H}{\sqrt{d_{qk}}})^{\frac{3^L-1}{2}}\vert\vert res(X) \vert\vert_{1, \infty}^{3^L}$$
 
 It follows that if the term inside the parentheses is less than 1, $||res(Y)||$ decays exponentially as $L$ increases.
 
