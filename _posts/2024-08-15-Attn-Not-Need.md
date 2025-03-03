@@ -42,7 +42,7 @@ The key inequality proposed in the paper is as follows, where $\beta$ denotes an
 
 $$\vert\vert res(Y(X))\vert\vert_{1, \infty} \leq (\frac{4 \beta H}{\sqrt{d_{qk}}})^{\frac{3^L-1}{2}}\vert\vert res(X) \vert\vert_{1, \infty}^{3^L}$$
 
-It follows that if the term inside the parentheses is less than 1, $||res(Y)||$ decays exponentially as $L$ increases.
+It follows that if the term inside the parentheses is less than 1, $\vert\vert res(Y) \vert\vert$ decays exponentially as $L$ increases.
 
 **(Proof not yet fully understood—will be posted in the future.)**
 
