@@ -18,7 +18,3 @@ Tags : CS, DL, Math, Physics, and Misc
 - Spacetime and Geometry, Carroll
 - Fundamental Astronomy, Karttunen
 - Introductory Astronomy & Astrophysics, Zeilik
-- The elements of computing systems : building a modern computer from first principles : NAND만으로 컴퓨터를 만들 수 있다.
-- Facism, Robert O. Paxton
-- Etica Protestante, Max Weber
-- Nietsche the Man and His Philosophy, J. Hollingdale
